@@ -1,0 +1,82 @@
+/* General styles */
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  height: 200vh;
+}
+
+/* Fixed header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Sticky element */
+.sticky-note {
+  position: sticky;
+  top: 90px;
+  background-color: #ffd;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Main layout using flexbox */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 100px 20px 20px;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #333;
+}
+
+/* Highlight text */
+.highlight {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Relative container */
+.box {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #ddd;
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+/* Absolute positioned element */
+.absolute-box {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+
+/* Fixed button */
+.fixed-button {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  padding: 10px;
+}

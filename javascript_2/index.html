@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function palindrome(a) {
+        let lastDigit = 0;
+        let firstNum = a;
+        let newNum = 0;
+        while (a >= 10) {
+          lastDigit = a % 10;
+          newNum = newNum * 10 + lastDigit;
+          a = (a - lastDigit) / 10;
+        }
+        newNum = newNum * 10 + a;
+
+        if (newNum === firstNum) {
+          return "Palindrome too mun";
+        } else return "Palindrome bish";
+      }
+
+      console.log(palindrome(1234321));
+    </script>
+  </body>
+</html>

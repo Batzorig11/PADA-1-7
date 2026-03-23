@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f6f9;
+}
+
+h1::before {
+  content: "🔥 ";
+}
+
+h1::after {
+  content: " 🔥";
+}
+
+/* PSEUDO CLASS - hover */
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+/* PSEUDO CLASS - focus */
+input:focus {
+  outline: 3px solid orange;
+  background-color: #fff8e1;
+}
+
+/* PSEUDO CLASS - first-child */
+ul li:first-child {
+  color: red;
+  font-weight: bold;
+}
+
+/* PSEUDO CLASS - nth-child */
+ul li:nth-child(3) {
+  color: green;
+}
+
+/* PSEUDO ELEMENT - first-letter */
+.paragraph::first-letter {
+  font-size: 30px;
+  color: purple;
+  font-weight: bold;
+}
+
+/* PSEUDO ELEMENT - selection */
+::selection {
+  background: yellow;
+  color: black;
+}
+
+/* OVERFLOW EXAMPLE */
+.box {
+  width: 200px;
+  height: 100px;
+  border: 2px solid black;
+  overflow: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* OUTLINE EXAMPLE */
+.card {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border: 2px solid gray;
+  outline: 3px dashed red;
+  width: fit-content;
+}

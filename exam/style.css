@@ -1,0 +1,91 @@
+p {
+  font-family: monospace;
+}
+#div1 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.div2 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+#grid {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+.grid1 {
+  background-color: red;
+}
+.grid2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid3 {
+  background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-image: url("https://www.shorturl.at/img/shorturl-icon.png");
+}
+#border {
+  border: 10px solid red;
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  background-color: black;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#gradient {
+  width: 200px;
+  height: 100px;
+  background-image: linear-gradient(
+    180deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    purple
+  );
+}
+
+.help {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}

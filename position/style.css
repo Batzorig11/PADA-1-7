@@ -1,0 +1,45 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.static {
+  background-color: yellow;
+  position: static;
+}
+
+.relative {
+  position: relative;
+  left: 40px;
+}
+
+.absolute {
+  position: absolute;
+  left: 200px;
+  background-color: aqua;
+  z-index: 1;
+}
+.fixed {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+.sticky {
+  position: sticky;
+  left: 100px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: blue;
+}
+.container {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  height: 200vh;
+  padding-top: 100px;
+}

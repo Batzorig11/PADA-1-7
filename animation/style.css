@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  gap: 40px;
+}
+/* .container {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  border-radius: 50%;
+  animation: bounce 1s infinite ease-in;
+  position: relative;
+}
+@keyframes bounce {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 500px;
+  }
+  100% {
+    bottom: 0;
+  }
+} */
+
+.ball {
+  width: 60px;
+  height: 60px;
+  background: crimson;
+  border-radius: 50%;
+  animation: bounce 0.8s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-120px);
+  }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ddd;
+  border-top-color: #4a6cf7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pulse-btn {
+  padding: 14px 28px;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+.reveal {
+  font-size: 32px;
+  opacity: 0;
+  animation: slideIn 0.8s ease-out infinite forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.typing {
+  font-family: monospace;
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  width: 0;
+
+  animation:
+    typing 3s steps(20) forwards,
+    blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 20ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

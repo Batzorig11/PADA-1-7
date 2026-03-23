@@ -1,0 +1,218 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background: coral;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  width: 200px;
+  height: 120px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover p {
+  opacity: 1;
+}
+
+.slide-btn {
+  position: relative;
+  padding: 12px 24px;
+  border: 2px solid #333;
+  background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slide-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #333;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.slide-btn:hover::before {
+  transform: translateX(0);
+}
+
+.slide-btn:hover {
+  color: white;
+}
+
+.card {
+  width: 200px;
+  height: 140px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.img-wrap {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.img-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #333;
+  transition: all 0.4s ease-out;
+  transform: translateX(-50%);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.fancy {
+  position: relative;
+  padding: 12px 28px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fancy span {
+  display: inline-block;
+  transition: transform 0.3s ease 0.1s;
+}
+
+.fancy::after {
+  content: "→";
+  position: absolute;
+  right: 16px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.3s ease 0.2s,
+    transform 0.3s ease 0.2s;
+}
+
+.fancy:hover {
+  background: #3b55c5;
+}
+
+.fancy:hover span {
+  transform: translateY(-4px);
+}
+
+.fancy:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu {
+  width: 200px;
+}
+
+.item {
+  background: #eee;
+  padding: 12px;
+  margin: 6px 0;
+  width: 120px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  width: 180px;
+  background: #4a6cf7;
+  color: white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tip {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.tooltip:hover .tip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  transition-delay: 0.15s;
+}
