@@ -64,3 +64,7 @@ console.log("Total Inventory Value:", inventory.getInventoryValue());
 inventory.removeItem("Mouse");
 
 inventory.printInventory();
+console.log(
+  "Total Inventory Value after removal:",
+  inventory.getInventoryValue(),
+);
